@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>logical operators</title>
+	<p id="logicor"></p>
+</head>
+<body>
+	<script type="text/javascript" language="javascript">
+		var a=true;
+		var b=false;
+		var c="<br/>";
+		document.write("a && b");
+		var result=a &&b;
+		document.write(result);
+		document.write(c);
+		var x=10;
+		var y=6;
+		document.getElementById("logicor").innerHTML=
+		(x ==4 || y==3)+"<br/>"+
+		(x ==10 || y==3)+"<br/>"+
+		(x ==4 || y==6)+"<br/>"+
+		(x ==10|| y==6)+"<br/>"
+		document.write("a !! b");
+		var resulta= !(a && b)+ "<br/>";
+		document.write (resulta )
+
+	</script>
+
+</body>
+</html>

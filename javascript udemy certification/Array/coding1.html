@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coding challenge 1</title>
+</head>
+<body> 
+	<script type="text/javascript" language="javascript">
+		function kth_greatest_in_array(arr,k){
+		  
+          for(var i=0;i<k;i++){
+            var imax=i;
+            tmp=arr[i];
+            for(var j=i+1;j<arr.length;j++){
+
+            	if(arr[j]>arr[imax]){
+            		imax=j;
+            	}
+
+            }
+            arr[i]=arr[imax];
+            arr[imax]=tmp;
+
+          }
+          return arr[k-1];
+
+
+
+
+		}
+		console.log(kth_greatest_in_array([1,2,6,4,5], 3));
+       
+   
+
+	</script>
+
+</body>
+</html>

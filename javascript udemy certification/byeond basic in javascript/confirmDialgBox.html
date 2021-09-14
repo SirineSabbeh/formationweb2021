@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>conformation dialog Box</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function diagConfirm(){
+
+			var conf=confirm("do upu want to continue") ;
+			if(conf=="true"){
+				document.write("ok");
+				return true;
+			}else
+			document.write("cancel");
+			return false;
+		}
+
+
+
+
+	</script>
+	<p>this is confirm dialog Box</p>
+	<input type="button" name="" value="click me" onclick="diagConfirm()">
+
+</body>
+</html>

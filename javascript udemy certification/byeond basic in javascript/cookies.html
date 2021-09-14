@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cookies in javascript</title>
+</head>
+<body>
+	<script>
+		function cookies(){
+          if(document.form.customer.value=""){
+          	alert("enter some value for cookies");
+          	return;
+          }
+          cookieVal=escape(document.write.customer.value)+";";
+              document.cookie="name="+cookieVal;
+          document.write("setting cookies name ="+cookieVal);
+
+
+		}
+	</script>
+	<form name="form" action="#">
+	enter your name:<input type="text" name="customer">
+	<input type="button"  name="" value="set cookies" onClick="cookies()">
+
+
+    </form>
+
+</body>
+</html>
